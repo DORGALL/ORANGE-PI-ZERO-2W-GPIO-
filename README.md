@@ -10,14 +10,18 @@ Zero 2w usando lenguaje C y la librería libgpiod.
    paquetes del sistema:
    
     $ sudo apt update
+   
     $ sudo apt upgrade
 
 3) Instalar dependencias necesarias: Permitirán acceder a libgpiod desde lenguaje C y poder compilar el codigo:
+   
     $ sudo apt install libgpiod-dev
+   
     $ sudo apt install libgpiod-tools
+   
     $ sudo apt install build-essential
 
-4) Identificamos los chips GPIO del sistema: Los GPIO en linux se organizan en bloques llamados "gpiochip*", cada uno es
+5) Identificamos los chips GPIO del sistema: Los GPIO en linux se organizan en bloques llamados "gpiochip*", cada uno es
    manejado por un controlador interno.
    
     $ sudo gpiodetect
@@ -25,6 +29,7 @@ Zero 2w usando lenguaje C y la librería libgpiod.
    Aquí saldrá algo similar a:
 
      gpiochip0 [7022000.pinctrl] (32 lines)
+   
      gpiochip1 [300b000.pinctrl] (288 lines)
 
    Alternativa:
@@ -34,6 +39,7 @@ Zero 2w usando lenguaje C y la librería libgpiod.
    En nuestra Orange Pi Zero 2W, el chip que normalmente maneja los GPIO del header es "/dev/gpiochip1".
 
 4) Información del gpiochip1: Si queremos más información de cada uno de los pines y su estado, listamos con:
+   
      $ sudo gpioinfo
 
 
