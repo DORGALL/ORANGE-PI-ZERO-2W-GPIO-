@@ -16,6 +16,7 @@ int main(){
     printf("Muy bien ALALAU, chip abierto exitosamente :D.\n");
   }
 
+  //CERRAMOS EL CHIP
   gpiod_chip_close(chip);
   return 1;
 }
