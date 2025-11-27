@@ -1,5 +1,5 @@
 # ORANGE-PI-ZERO-2W-GPIO-
-##MANUAL DE USO DE GPIO EN ORANGE PI ZERO 2W (ARMBIAN MINIMAL)
+MANUAL DE USO DE GPIO EN ORANGE PI ZERO 2W (ARMBIAN MINIMAL)
 Control de GPIO y pantalla ST7789 usando C y libgpiod 2.x
 
 Este repositorio documenta los paso que seguí para controlar GPIO y manejar una pantalla SPI ST7789 en una Orange Pi
